@@ -16,3 +16,15 @@ conda activate cspc
 **Tests:** all passing? yes
 **Conclusion:**
 the numpy vectorized implementation significantly outperforms the pure python loop.
+
+
+## PW2 - Lab B : Data, Plotting, and Automation
+**What I built:**
+    completed plot.by , observed data and automated the image generation using snakemake
+
+**Data Observation:**
+    observed data shows an exponentioal drop in count value ober time
+    the experimental scatter points closely align with the theoretical curve
+
+**Snakemake Pipeline:**
+ atomatically rebuilds `figure.png` only when `decay_observed.csv` or `plot.py` changes
