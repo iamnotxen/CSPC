@@ -18,13 +18,22 @@ conda activate cspc
 the numpy vectorized implementation significantly outperforms the pure python loop.
 
 
-## PW2 - Lab B : Data, Plotting, and Automation
+## PW1 - Lab B : Data, Plotting, and Automation
 **What I built:**
     completed plot.by , observed data and automated the image generation using snakemake
 
 **Data Observation:**
-    observed data shows an exponentioal drop in count value ober time
+    observed data shows an exponentioal drop in count value over time
     the experimental scatter points closely align with the theoretical curve
 
 **Snakemake Pipeline:**
  atomatically rebuilds `figure.png` only when `decay_observed.csv` or `plot.py` changes
+ 
+ 
+ ## PW2 - Lab A :  Motion from Tracking Data
+ **What I built**
+    finished analysis.py, read data from file, displayed mean and std on the plot pf acceleration and velocity
+**Mean Acceleration:**
+    measured mean acceleration was -8.5 which is rougly 9.8
+**Noise Analysis**
+    Acceleration is extremely noisy (std = 28.7) since numerical differentiation acts a high pass filter amplifies snall measurement error in position data
