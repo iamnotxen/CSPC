@@ -16,7 +16,7 @@ K = 15.6
 a = b = 1.0
 
 # TODO 1: write k_imbalance(x) = (2x)^2/((a-x)(b-x)) - K.
-#         It equals zero exactly at equilibrium.
+#         It equals zero exactly at equilibrium
 def k_imbalance(x):
     x_val = np.clip(x, 0.0, 0.999)
     return ((2 * x_val)**2 / ((a - x_val) * (b - x_val))) - K
